@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>BookMySeat - An Application to Book Movie Tickets</title>
+    <style>
+        footer {
+            position: bottom;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgb(41, 38, 38);
+            height: 100px;
+            width: 100vw;
+            padding-top: 40px;
+            color: #fff;
+            clear: both;
+        }
+
+        body {
+            color: #000;
+        }
+
+        hr {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--To create the Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html" style="color: rgb(248, 239, 245); font-size: xx-large;">BookMySeat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="emptypage.html">About Us</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Expand
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Book Now</a>
+                        <a class="dropdown-item" href="#">Checkout New Releases</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Queries? Write to us</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="emptypage.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--To create the Search Bar-->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!--To Create the moving Carousal-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+        style="margin-top: 6px; border: 1px solid #000;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Carousal Posters/carousal1.jpg" alt="First slide" height="400px"
+                    width="100px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Now Book Your Movies Online</h3>
+                    <p>Online movie ticket bookings for the Bollywood, Hollywood, Tamil, Telugu and other ... Now it is
+                        easy to get on with online ticket booking with BookMySeat.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Carousal Posters/carousal2.jpg" alt="Second slide" height="400px"
+                    width="100px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Wanna Host Your Movies?</h3>
+                    <p>First, go to BookMySeat on your browser. (It supports Chrome, Firefox, Safari, and Microsoft
+                        Edge.) Go
+                        into the show or movie you want to watch.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Carousal Posters/carousal3.jpg" alt="Third slide" height="400px"
+                    width="100px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>The best Movie Experience Ever</h3>
+                    <p>Best sound, seats, screen, and best value on food at any movie theatre. Jordans out performs even
+                        other IMAX experiences I've had.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+
+    <!--To put a seperation row-->
+    <div class="d-flex justify-content-center"
+        style="background-color: rgb(187, 163, 130); margin-top: 6px; border: 1px solid #000;">
+        <div class="p-2" style="font-size: 25px; color: rgb(119, 33, 33); font-weight: 800;">Now Showing!</div>
+    </div>
+
+    <!--To add the cards of now released movies-->
+    <div style="background-color: black;">
+        <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 200px;">
+            <img class="card-img-top" src="Movie Posters/1.jpg" alt="Card image cap" height="340px">
+            <div class="card-body">
+                <h5 class="card-title">Kantara</h5>
+                <p class="card-text">Set in a fictional village of Dakshina Kannada, Kantara is a visual grandeur that
+                    brings alive the traditional culture of Kambla and Bhootha Kola. It is believed that Demigods are
+                    the guardians and their energies encircle the village.</p>
+                <a href="booking_page.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+            <img class="card-img-top" src="Movie Posters/2.jpg" alt="Card image cap" height="340px">
+            <div class="card-body">
+                <h5 class="card-title">Vikram Vedha</h5>
+                <p class="card-text">Vikram Vedha is a 2022 Indian Hindi-language neo-noir action thriller film written
+                    and directed by Pushkar–Gayathri and jointly produced by S. Shashikanth under YNOT Studios, Friday
+                    Filmworks, Bhushan Kumar and Krishan Kumar under T-Series Films, </p>
+                <a href="booking_page.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+            <img class="card-img-top" src="Movie Posters/3.jpg" alt="Card image cap" height="340px">
+            <div class="card-body">
+                <h5 class="card-title">Bhramastra: Part One - Shiva</h5>
+                <p class="card-text">Brahmāstra: Part One – Shiva (pronounced [bɾəɦmaːstrə]) is a 2022 Indian
+                    Hindi-language fantasy action-adventure film[b] written and directed by Ayan Mukerji. It is produced
+                    by Karan Johar, Apoorva Mehta) </p>
+                <a href="booking_page.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+            <img class="card-img-top" src="Movie Posters/4.jpg" alt="Card image cap" height="340px">
+            <div class="card-body">
+                <h5 class="card-title">Totapuri</h5>
+                <p class="card-text">Totapuri is a romantic comedy entertainer movie directed by Vijayaprasad and
+                    produced by K A Suresh. The movie cast includes Jaggesh, Dhananjay, Suman Ranganathan and Aditi
+                    Prabhudeva are in the main lead roles.</p>
+                <a href="booking_page.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!--To put a seperation row-->
+    <div class="d-flex justify-content-center"
+        style="background-color: rgb(187, 163, 130); margin-top: 6px; border: 1px solid #000; clear: both;">
+        <div class="p-2" style="font-size: 25px; color: rgb(119, 33, 33); font-weight: 800;">Upcoming!</div>
+    </div>
+
+
+    <!--To add the cards of upcoming movies-->
+    <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 200px;">
+        <img class="card-img-top" src="Movie Posters/5.jpg" alt="Card image cap" height="340px">
+        <div class="card-body">
+            <h5 class="card-title">The Ghost</h5>
+            <p class="card-text">The Ghost is an upcoming Indian Telugu-language action thriller film written and
+                directed by Praveen Sattaru. It is produced by Sri Venkateswara Cinemas and North Star Entertainment.
+            </p>
+            <a href="NotReleasedMovies.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+        <img class="card-img-top" src="Movie Posters/6.jpg" alt="Card image cap" height="340px">
+        <div class="card-body">
+            <h5 class="card-title">Tiranga</h5>
+            <p class="card-text">Tiranga is an upcoming Indian Hindi-language espionage thriller film written
+                and directed by Ribhu Dasgupta.[1] It is jointly produced by T-Series, Reliance Entertainment.</p>
+            <a href="NotReleasedMovies.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+        <img class="card-img-top" src="Movie Posters/7.jpg" alt="Card image cap" height="340px">
+        <div class="card-body">
+            <h5 class="card-title">Black Adam</h5>
+            <p class="card-text">Black Adam is an upcoming American superhero film based on the DC Comics character of
+                the same name. Produced by New Line Cinema, DC Films, Seven Bucks Productions, and FlynnPictureCo.,</p>
+            <a href="NotReleasedMovies.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 15rem; margin: 30px; float: left; margin-left: 50px;">
+        <img class="card-img-top" src="Movie Posters/8.jpg" alt="Card image cap" height="340px">
+        <div class="card-body">
+            <h5 class="card-title">Ram Setu</h5>
+            <p class="card-text">Ram Setu (transl. Rama's bridge) is an upcoming Indian Hindi-language action-adventure
+                film[1] directed by Abhishek Sharma. The film stars Akshay Kumar, Jacqueline Fernandez,</p>
+            <a href="NotReleasedMovies.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+
+
+    <!--The Footer section here-->
+    <footer>
+        <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="footer-content">
+            <h3>BookMySeat</h3>
+            <p>Online movie ticket bookings for the Bollywood, Hollywood, Tamil, Telugu and other ... Now it is
+                easy to get on with online ticket booking with BookMySeat.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2022 BookMySeat.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

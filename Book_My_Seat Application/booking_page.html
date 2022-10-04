@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMySeat - An Application to Book Movie Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--To Select the Type of Seats-->
+    <div class="movie-container">
+        <label>Type of Seats</label>
+        <select name="#" id="movie">
+            <option value="10">Premium (Rs.200)</option>
+            <option value="12">Standard (Rs.150)</option>
+        </select>
+    </div>
+
+    <!--Seating Indication Colors-->
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <!--To display the Screen-->
+    <div class="container">
+        <h4 style="text-align: center;">Screen</h4>
+        <div class="screen"></div>
+
+        <!--Code to make the Seats -->
+        <h3 style="text-align: center;">Standard Seats</h3>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <h3 style="text-align: center;">Premium Seats</h3>
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+    <!--Logic for the Calculation-->
+    <p class="text">
+        You Have Selected <span id="count"> 0 </span> Seats for a Price of <span id="total"> 0 </span>
+    </p>
+    <script src="script.js"></script>
+    <br><br>
+    <button type="submit" style="font-weight: 400px;width: 100px;height: 40px;font-size: xx-large;">
+        <a class="book_btn" href="booked_tickets.html">Book</a>
+    </button>
+</body>
+
+</html>
